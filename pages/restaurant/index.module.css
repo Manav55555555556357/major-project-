@@ -1,0 +1,130 @@
+/* index.module.css */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.title {
+    font-size: 2rem;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.logoutButton,
+.createDonationButton,
+.acceptButton,
+.declineButton {
+    cursor: pointer;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+.logoutButton {
+    background-color: var(--error-color);
+    color: var(--text-color);
+}
+
+.createDonationButton {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+}
+
+.requestsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 30px 0;
+}
+
+.requestCard {
+    background-color: var(--input-background-color);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+    max-width: 300px;
+}
+
+.ngoName {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.donationList {
+    list-style-type: none;
+    padding: 0;
+}
+
+.acceptButton {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}
+
+.declineButton {
+    background-color: var(--error-color);
+    color: var(--text-color);
+}
+
+.modal {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modalContent {
+    background-color: var(--input-background-color);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10% auto;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modalContent input[type='text'],
+.modalContent input[type='number'] {
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    font-size: 1rem;
+    margin: 10px 0;
+    width: 100%;
+}
+
+.modalContent input[type='file'] {
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+.modalContent button {
+    cursor: pointer;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}

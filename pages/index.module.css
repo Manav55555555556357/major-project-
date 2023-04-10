@@ -1,0 +1,46 @@
+/* Define CSS variables */
+.lightMode {
+    --primary-color: #3C6255;
+    --secondary-color: #61876E;
+    --background-color: #A6BB8D;
+    --text-color: #EAE7B1;
+}
+
+/* Component styles */
+.homeBox {
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    margin: 0 auto;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.title {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.button {
+    padding: 10px 15px;
+    background-color: var(--primary-color);
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #61876E;
+}

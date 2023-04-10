@@ -1,0 +1,120 @@
+.lightMode {
+    /* Light mode colors */
+    --primary-color: #61876E;
+    --secondary-color: #A6BB8D;
+    --background-color: #A6BB8D;
+    --text-color: #34495e;
+    --input-background-color: #ecf0f1;
+    --border-color: #bdc3c7;
+    --error-color: #e74c3c;
+}
+
+.registerBox {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: var(--background-color);
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    text-align: center;
+    color: var(--text-color);
+}
+
+.label {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--text-color);
+}
+
+.input,
+.select {
+    width: 100%;
+    max-width: 100%;
+    padding: 5px;
+    margin-bottom: 15px;
+    border: 1px solid var(--border-color);
+    border-radius: 3px;
+    background-color: var(--input-background-color);
+}
+
+.tabContainer {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.tab {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    background: none;
+    font-weight: bold;
+    color: var(--text-color);
+    outline: none;
+    border-bottom: 2px solid transparent;
+}
+
+.tab.selected {
+    color: #21241f;
+    border-bottom-color: #21241f;
+}
+
+.error {
+    color: var(--error-color);
+    font-size: 0.9em;
+    margin-bottom: 15px;
+}
+
+.submitButton {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--primary-color);
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.submitButton:hover {
+    background-color: var(--tertiary-color);
+}
+
+.loginLinkContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.loginLink {
+    margin-left: 5px;
+    color: var(--primary-color);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.loginLink:hover {
+    text-decoration: underline;
+}
+
+.homeLinkContainer {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.homeLink {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.homeLink:hover {
+    color: #4a9ad8;
+}
